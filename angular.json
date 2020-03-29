@@ -80,23 +80,6 @@
             "browserTarget": "my-epic-app:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/my-epic-app/src/test.ts",
-            "polyfills": "projects/my-epic-app/src/polyfills.ts",
-            "tsConfig": "projects/my-epic-app/tsconfig.spec.json",
-            "karmaConfig": "projects/my-epic-app/karma.conf.js",
-            "assets": [
-              "projects/my-epic-app/src/favicon.ico",
-              "projects/my-epic-app/src/assets"
-            ],
-            "styles": [
-              "projects/my-epic-app/src/styles.scss"
-            ],
-            "scripts": []
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
