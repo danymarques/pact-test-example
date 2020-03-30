@@ -10,6 +10,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Running tests
 
 Run `npm run test` to execute the unit and the Pact tests with Jest.
+
+## Running Pact Test individually
+
+Run `npm run test:pact` to execute Pact tests.
