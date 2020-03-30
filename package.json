@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest --config ./projects/my-epic-app/jest.config.js",
+    "test": "jest --config ./projects/my-epic-app/jest.config.js && npm run test:pact",
+    "test:pact": "jest --config ./projects/my-epic-app/jest.config.pact.js",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -28,6 +29,7 @@
     "@angular/cli": "~9.0.5",
     "@angular/compiler-cli": "~9.0.5",
     "@angular/language-service": "~9.0.5",
+    "@pact-foundation/pact": "^9.8.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/jest": "^25.1.4",

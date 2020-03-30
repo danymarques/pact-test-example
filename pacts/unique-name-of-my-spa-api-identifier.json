@@ -1,0 +1,41 @@
+{
+  "consumer": {
+    "name": "unique-name-of-my-spa"
+  },
+  "provider": {
+    "name": "api-identifier"
+  },
+  "interactions": [
+    {
+      "description": "a request to GET a user",
+      "providerState": "user 1 exists",
+      "request": {
+        "method": "GET",
+        "path": "/api/user/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "id": 1,
+          "firstName": "Toto",
+          "lastName": "Titi"
+        },
+        "matchingRules": {
+          "$.body.firstName": {
+            "match": "type"
+          },
+          "$.body.lastName": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}
